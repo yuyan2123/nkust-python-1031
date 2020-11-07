@@ -18,6 +18,8 @@ from django.urls import path
 from mysite import views
 
 urlpatterns = [
+    path('list/<int:id>/', views.showlist),
+    path('playlist/', views.playlist),
     path('admin/', admin.site.urls),
     path('',views.index),   #首頁處理程序
 ]
